@@ -1,0 +1,7 @@
+#include "stm32f4xx_hal.h"
+
+//subroutine
+void my_LED_Toggle(void){
+	//PA5 is green LED on the board
+	HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);
+}
